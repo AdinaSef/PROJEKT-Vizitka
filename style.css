@@ -14,3 +14,96 @@ tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #9da4aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+
+.card {
+  width: 550px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* jemný stín */
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  
+
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #d63031;
+  margin: 0 0 30px 0;
+}
+
+.description,
+.hobby {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+
+
+.hobby span {
+  color: #d63031;
+}
+
+.social-buttons {
+    margin-top: 20px;
+  }
+  
+  .social-button {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .social-button.twitter {
+    background-color: #1da1f2;
+  }
+  
+  .social-button.facebook {
+    background-color: #3b5998;
+  }
+  
+  .social-button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+  }
+  
+  
